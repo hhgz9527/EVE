@@ -2,5 +2,7 @@
 
 ##Feature next
 
-- 3D ship viewer
+- Main Screen
+- Character View
 - Training queue viewer
+- 3D ship viewer
