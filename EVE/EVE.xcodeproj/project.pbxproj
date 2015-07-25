@@ -10,6 +10,7 @@
 		50C9C4A4393E05F684BCB770 /* Pods_EVE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6DDBD9DDDF92D63D5EB6A0 /* Pods_EVE.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		64328B7C1B63B7540036B88F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64328B7B1B63B7540036B88F /* AVFoundation.framework */; };
 		64328B7F1B63B7930036B88F /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64328B7E1B63B7930036B88F /* bg.mp4 */; };
+		64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64421DFC1B63C7CB00CD6F28 /* CRest.swift */; };
 		64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */; };
 		64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A71B6371CA00C8C22A /* ViewController.swift */; };
 		64ACB1AB1B6371CA00C8C22A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64ACB1A91B6371CA00C8C22A /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		3A6DDBD9DDDF92D63D5EB6A0 /* Pods_EVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64328B7B1B63B7540036B88F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		64328B7E1B63B7930036B88F /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
+		64421DFC1B63C7CB00CD6F28 /* CRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRest.swift; sourceTree = "<group>"; };
 		64ACB1A21B6371CA00C8C22A /* EVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64ACB1A71B6371CA00C8C22A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		64421DFB1B63C7A200CD6F28 /* CREST */ = {
+			isa = PBXGroup;
+			children = (
+				64421DFC1B63C7CB00CD6F28 /* CRest.swift */,
+			);
+			name = CREST;
+			sourceTree = "<group>";
+		};
 		64ACB1991B6371CA00C8C22A = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		64ACB1A41B6371CA00C8C22A /* EVE */ = {
 			isa = PBXGroup;
 			children = (
+				64421DFB1B63C7A200CD6F28 /* CREST */,
 				64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */,
 				64ACB1A71B6371CA00C8C22A /* ViewController.swift */,
 				64ACB1A91B6371CA00C8C22A /* Main.storyboard */,
@@ -348,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */,
 				64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */,
 				64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */,
 			);
