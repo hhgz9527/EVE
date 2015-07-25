@@ -7,16 +7,38 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var player = AVPlayer(URL: NSBundle.mainBundle().URLForResource("bg", withExtension: "mp4")!)
+    
+    var bgLayer: AVPlayerLayer? = nil
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        player.actionAtItemEnd = AVPlayerActionAtItemEnd.None
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "loopVideo:", name: AVPlayerItemDidPlayToEndTimeNotification, object: player.currentItem)
+        
+        
+        bgLayer = AVPlayerLayer(player: player)
+        bgLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
+        bgLayer?.frame = UIScreen.mainScreen().bounds
+        
+        self.window!.layer.insertSublayer(bgLayer!, below: self.window!.layer)
+        
+        
+        player.play()
         // Override point for customization after application launch.
         return true
+    }
+    
+    func loopVideo(notification: NSNotification) {
+        let item = notification.object
+        item?.seekToTime(kCMTimeZero)
     }
 
     func applicationWillResignActive(application: UIApplication) {
