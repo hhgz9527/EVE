@@ -11,6 +11,7 @@
 		64328B7C1B63B7540036B88F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64328B7B1B63B7540036B88F /* AVFoundation.framework */; };
 		64328B7F1B63B7930036B88F /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64328B7E1B63B7930036B88F /* bg.mp4 */; };
 		64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64421DFC1B63C7CB00CD6F28 /* CRest.swift */; };
+		644D88191B65123D00BF6FAC /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D88181B65123D00BF6FAC /* URLParser.swift */; };
 		64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */; };
 		64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A71B6371CA00C8C22A /* ViewController.swift */; };
 		64ACB1AB1B6371CA00C8C22A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64ACB1A91B6371CA00C8C22A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		64ACB1B01B6371CA00C8C22A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64ACB1AE1B6371CA00C8C22A /* LaunchScreen.storyboard */; };
 		64ACB1BB1B6371CA00C8C22A /* EVETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1BA1B6371CA00C8C22A /* EVETests.swift */; };
 		64ACB1C61B6371CA00C8C22A /* EVEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1C51B6371CA00C8C22A /* EVEUITests.swift */; };
+		64DD9E931B66322C00B51AC4 /* EVE_SSO_Login_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		64328B7B1B63B7540036B88F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		64328B7E1B63B7930036B88F /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		64421DFC1B63C7CB00CD6F28 /* CRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRest.swift; sourceTree = "<group>"; };
+		644D88181B65123D00BF6FAC /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
 		64ACB1A21B6371CA00C8C22A /* EVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64ACB1A71B6371CA00C8C22A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		64ACB1C11B6371CA00C8C22A /* EVEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64ACB1C51B6371CA00C8C22A /* EVEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVEUITests.swift; sourceTree = "<group>"; };
 		64ACB1C71B6371CA00C8C22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EVE_SSO_Login_Button.png; sourceTree = "<group>"; };
 		6DA670D2BD31A265DD81837A /* Pods-EVE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVE.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVE/Pods-EVE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,7 @@
 		64328B7D1B63B7760036B88F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */,
 				64328B7E1B63B7930036B88F /* bg.mp4 */,
 			);
 			name = Resources;
@@ -109,6 +114,22 @@
 				64421DFC1B63C7CB00CD6F28 /* CRest.swift */,
 			);
 			name = CREST;
+			sourceTree = "<group>";
+		};
+		644D88161B65094600BF6FAC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				644D88171B65095100BF6FAC /* XML */,
+				64421DFB1B63C7A200CD6F28 /* CREST */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		644D88171B65095100BF6FAC /* XML */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XML;
 			sourceTree = "<group>";
 		};
 		64ACB1991B6371CA00C8C22A = {
@@ -136,8 +157,9 @@
 		64ACB1A41B6371CA00C8C22A /* EVE */ = {
 			isa = PBXGroup;
 			children = (
-				64421DFB1B63C7A200CD6F28 /* CREST */,
+				644D88161B65094600BF6FAC /* API */,
 				64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */,
+				644D88181B65123D00BF6FAC /* URLParser.swift */,
 				64ACB1A71B6371CA00C8C22A /* ViewController.swift */,
 				64ACB1A91B6371CA00C8C22A /* Main.storyboard */,
 				64ACB1AC1B6371CA00C8C22A /* Assets.xcassets */,
@@ -286,6 +308,7 @@
 				64ACB1B01B6371CA00C8C22A /* LaunchScreen.storyboard in Resources */,
 				64ACB1AD1B6371CA00C8C22A /* Assets.xcassets in Resources */,
 				64328B7F1B63B7930036B88F /* bg.mp4 in Resources */,
+				64DD9E931B66322C00B51AC4 /* EVE_SSO_Login_Button.png in Resources */,
 				64ACB1AB1B6371CA00C8C22A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +384,7 @@
 			files = (
 				64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */,
 				64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */,
+				644D88191B65123D00BF6FAC /* URLParser.swift in Sources */,
 				64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

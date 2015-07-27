@@ -15,13 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2h-xm-AlM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="EVE_SSO_Login_Button.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="390" width="124" height="20"/>
+                                </variation>
+                                <connections>
+                                    <action selector="requestAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmg-jB-3UE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="q2h-xm-AlM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="q2h-xm-AlM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Avb-cP-juV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="356"/>
+            <point key="canvasLocation" x="1116" y="355.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IS9-cx-laQ">
@@ -43,4 +66,7 @@
             <point key="canvasLocation" x="356" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="EVE_SSO_Login_Button.png" width="270" height="45"/>
+    </resources>
 </document>

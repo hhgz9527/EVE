@@ -21,5 +21,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func requestAuth(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://login.eveonline.com/oauth/authorize?response_type=code&redirect_uri=eve%3A%2F%2Fcallback&client_id=97501bccc99b40b69b349dc7277621d8&scope=publicData")!)
+    }
 }
 
