@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A226f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vEu-Hp-KSY">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -45,34 +46,100 @@
                                     <action selector="requestAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmg-jB-3UE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Virgo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gTG-d5-g2S">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="PtB-Yj-9Fl"/>
+                                    <constraint firstAttribute="height" constant="324" id="mJ7-2c-aRA"/>
+                                    <constraint firstAttribute="width" secondItem="gTG-d5-g2S" secondAttribute="height" multiplier="10:9" id="s4N-FZ-C4Q"/>
+                                    <constraint firstAttribute="width" secondItem="gTG-d5-g2S" secondAttribute="height" multiplier="100:81" id="ueu-cU-FY5"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PtB-Yj-9Fl"/>
+                                        <exclude reference="mJ7-2c-aRA"/>
+                                        <exclude reference="s4N-FZ-C4Q"/>
+                                        <exclude reference="ueu-cU-FY5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="PtB-Yj-9Fl"/>
+                                        <include reference="mJ7-2c-aRA"/>
+                                        <exclude reference="s4N-FZ-C4Q"/>
+                                        <exclude reference="ueu-cU-FY5"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shm-eK-ra7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="P5e-eM-FMu"/>
+                                    <constraint firstAttribute="width" constant="30" id="Pnm-an-ycQ"/>
+                                </constraints>
+                                <state key="normal" image="charactersheet.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P5e-eM-FMu"/>
+                                        <exclude reference="Pnm-an-ycQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="P5e-eM-FMu"/>
+                                        <include reference="Pnm-an-ycQ"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="q2h-xm-AlM" secondAttribute="trailing" id="2Zr-hE-EH8"/>
+                            <constraint firstItem="shm-eK-ra7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="189" id="3pr-eS-0vy">
+                                <variation key="heightClass=regular-widthClass=compact" constant="229"/>
+                            </constraint>
+                            <constraint firstItem="gTG-d5-g2S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5IC-ds-kFx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q2h-xm-AlM" secondAttribute="bottom" constant="20" id="Clk-Fy-7e7"/>
-                            <constraint firstItem="q2h-xm-AlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w89-Kf-rpf"/>
-                            <constraint firstItem="q2h-xm-AlM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="wes-h5-dQs"/>
+                            <constraint firstItem="shm-eK-ra7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="LnB-oj-QWj">
+                                <variation key="heightClass=regular-widthClass=compact" constant="106"/>
+                            </constraint>
+                            <constraint firstItem="gTG-d5-g2S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="c9M-RY-X93">
+                                <variation key="heightClass=regular-widthClass=compact" constant="167"/>
+                            </constraint>
+                            <constraint firstItem="gTG-d5-g2S" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vH2-cS-lEY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="q2h-xm-AlM"/>
+                                <exclude reference="gTG-d5-g2S"/>
+                                <exclude reference="shm-eK-ra7"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5IC-ds-kFx"/>
+                                <exclude reference="c9M-RY-X93"/>
+                                <exclude reference="vH2-cS-lEY"/>
+                                <exclude reference="3pr-eS-0vy"/>
+                                <exclude reference="LnB-oj-QWj"/>
                                 <exclude reference="Clk-Fy-7e7"/>
                                 <exclude reference="2Zr-hE-EH8"/>
-                                <exclude reference="w89-Kf-rpf"/>
-                                <exclude reference="wes-h5-dQs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="q2h-xm-AlM"/>
+                                <include reference="gTG-d5-g2S"/>
+                                <include reference="shm-eK-ra7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="5IC-ds-kFx"/>
+                                <include reference="c9M-RY-X93"/>
+                                <include reference="vH2-cS-lEY"/>
+                                <include reference="3pr-eS-0vy"/>
+                                <include reference="LnB-oj-QWj"/>
                                 <include reference="Clk-Fy-7e7"/>
                                 <include reference="2Zr-hE-EH8"/>
-                                <exclude reference="w89-Kf-rpf"/>
-                                <exclude reference="wes-h5-dQs"/>
                             </mask>
                         </variation>
                     </view>
@@ -105,5 +172,7 @@
     </scenes>
     <resources>
         <image name="EVE_SSO_Login_Button.png" width="270" height="45"/>
+        <image name="Virgo.png" width="780" height="690"/>
+        <image name="charactersheet.png" width="64" height="64"/>
     </resources>
 </document>

@@ -12,6 +12,13 @@
 		64328B7F1B63B7930036B88F /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64328B7E1B63B7930036B88F /* bg.mp4 */; };
 		64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64421DFC1B63C7CB00CD6F28 /* CRest.swift */; };
 		644D88191B65123D00BF6FAC /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D88181B65123D00BF6FAC /* URLParser.swift */; };
+		64963B3C1B67923500317D74 /* Virgo.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B3B1B67923500317D74 /* Virgo.png */; };
+		64963B3F1B679AC800317D74 /* charactersheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B3E1B679AC800317D74 /* charactersheet.png */; };
+		64963B411B679AD700317D74 /* assets.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B401B679AD700317D74 /* assets.png */; };
+		64963B431B679AEB00317D74 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B421B679AEB00317D74 /* wallet.png */; };
+		64963B451B679AF400317D74 /* skills.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B441B679AF400317D74 /* skills.png */; };
+		64963B471B679B0700317D74 /* evemail.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B461B679B0700317D74 /* evemail.png */; };
+		64963B491B679F0700317D74 /* ConstellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64963B481B679F0700317D74 /* ConstellationView.swift */; };
 		64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */; };
 		64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A71B6371CA00C8C22A /* ViewController.swift */; };
 		64ACB1AB1B6371CA00C8C22A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64ACB1A91B6371CA00C8C22A /* Main.storyboard */; };
@@ -49,6 +56,13 @@
 		64328B7E1B63B7930036B88F /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		64421DFC1B63C7CB00CD6F28 /* CRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRest.swift; sourceTree = "<group>"; };
 		644D88181B65123D00BF6FAC /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		64963B3B1B67923500317D74 /* Virgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Virgo.png; sourceTree = "<group>"; };
+		64963B3E1B679AC800317D74 /* charactersheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charactersheet.png; sourceTree = "<group>"; };
+		64963B401B679AD700317D74 /* assets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assets.png; sourceTree = "<group>"; };
+		64963B421B679AEB00317D74 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
+		64963B441B679AF400317D74 /* skills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skills.png; sourceTree = "<group>"; };
+		64963B461B679B0700317D74 /* evemail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evemail.png; sourceTree = "<group>"; };
+		64963B481B679F0700317D74 /* ConstellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationView.swift; sourceTree = "<group>"; };
 		64ACB1A21B6371CA00C8C22A /* EVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64ACB1A71B6371CA00C8C22A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +123,8 @@
 		64328B7D1B63B7760036B88F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				64963B3D1B679A8F00317D74 /* Icons */,
+				64963B3B1B67923500317D74 /* Virgo.png */,
 				64DD9E9C1B67055600B51AC4 /* eve-logo-flare.png */,
 				64DD9E991B6704CB00B51AC4 /* spark.png */,
 				64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */,
@@ -141,6 +157,18 @@
 			name = XML;
 			sourceTree = "<group>";
 		};
+		64963B3D1B679A8F00317D74 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				64963B461B679B0700317D74 /* evemail.png */,
+				64963B441B679AF400317D74 /* skills.png */,
+				64963B421B679AEB00317D74 /* wallet.png */,
+				64963B401B679AD700317D74 /* assets.png */,
+				64963B3E1B679AC800317D74 /* charactersheet.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		64ACB1991B6371CA00C8C22A = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +199,7 @@
 				644D88181B65123D00BF6FAC /* URLParser.swift */,
 				64ACB1A71B6371CA00C8C22A /* ViewController.swift */,
 				64ACB1A91B6371CA00C8C22A /* Main.storyboard */,
+				64963B481B679F0700317D74 /* ConstellationView.swift */,
 				64ACB1AC1B6371CA00C8C22A /* Assets.xcassets */,
 				64ACB1AE1B6371CA00C8C22A /* LaunchScreen.storyboard */,
 				64ACB1B11B6371CA00C8C22A /* Info.plist */,
@@ -316,12 +345,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				64ACB1B01B6371CA00C8C22A /* LaunchScreen.storyboard in Resources */,
+				64963B471B679B0700317D74 /* evemail.png in Resources */,
 				64ACB1AD1B6371CA00C8C22A /* Assets.xcassets in Resources */,
 				64DD9E9D1B67055600B51AC4 /* eve-logo-flare.png in Resources */,
+				64963B3C1B67923500317D74 /* Virgo.png in Resources */,
+				64963B411B679AD700317D74 /* assets.png in Resources */,
 				64328B7F1B63B7930036B88F /* bg.mp4 in Resources */,
+				64963B3F1B679AC800317D74 /* charactersheet.png in Resources */,
+				64963B431B679AEB00317D74 /* wallet.png in Resources */,
 				64DD9E931B66322C00B51AC4 /* EVE_SSO_Login_Button.png in Resources */,
 				64DD9E9B1B6704CB00B51AC4 /* spark.png in Resources */,
 				64ACB1AB1B6371CA00C8C22A /* Main.storyboard in Resources */,
+				64963B451B679AF400317D74 /* skills.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +432,7 @@
 				64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */,
 				64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */,
 				644D88191B65123D00BF6FAC /* URLParser.swift in Sources */,
+				64963B491B679F0700317D74 /* ConstellationView.swift in Sources */,
 				64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EVE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moshou.EVE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -553,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EVE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moshou.EVE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
