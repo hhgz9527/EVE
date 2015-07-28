@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+//        Init bg player
         player.actionAtItemEnd = AVPlayerActionAtItemEnd.None
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loopVideo:", name: AVPlayerItemDidPlayToEndTimeNotification, object: player.currentItem)
         
@@ -30,9 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         bgLayer?.frame = UIScreen.mainScreen().bounds
         
         self.window!.layer.insertSublayer(bgLayer!, below: self.window!.layer)
-        
-        
         player.play()
+        
+//        Set header logo
+        let logoView = UIImageView(image: UIImage(named: "eve-logo-flare.png"))
+        self.window!.addSubview(logoView)
+        logoView.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(self.window!).offset(-20)
+            make.height.equalTo(220)
+            make.centerX.equalTo(self.window!)
+        }
+        logoView.contentMode = UIViewContentMode.ScaleAspectFit
+        
         // Override point for customization after application launch.
         return true
     }
@@ -72,6 +83,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    
     
 }
 

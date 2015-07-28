@@ -20,6 +20,9 @@
 		64ACB1BB1B6371CA00C8C22A /* EVETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1BA1B6371CA00C8C22A /* EVETests.swift */; };
 		64ACB1C61B6371CA00C8C22A /* EVEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1C51B6371CA00C8C22A /* EVEUITests.swift */; };
 		64DD9E931B66322C00B51AC4 /* EVE_SSO_Login_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */; };
+		64DD9E9B1B6704CB00B51AC4 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 64DD9E991B6704CB00B51AC4 /* spark.png */; };
+		64DD9E9D1B67055600B51AC4 /* eve-logo-flare.png in Resources */ = {isa = PBXBuildFile; fileRef = 64DD9E9C1B67055600B51AC4 /* eve-logo-flare.png */; };
+		64DD9EA31B67068600B51AC4 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DD9EA21B67068600B51AC4 /* SceneKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		64ACB1C51B6371CA00C8C22A /* EVEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVEUITests.swift; sourceTree = "<group>"; };
 		64ACB1C71B6371CA00C8C22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EVE_SSO_Login_Button.png; sourceTree = "<group>"; };
+		64DD9E991B6704CB00B51AC4 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		64DD9E9C1B67055600B51AC4 /* eve-logo-flare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eve-logo-flare.png"; sourceTree = "<group>"; };
+		64DD9EA21B67068600B51AC4 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		6DA670D2BD31A265DD81837A /* Pods-EVE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVE.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVE/Pods-EVE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DD9EA31B67068600B51AC4 /* SceneKit.framework in Frameworks */,
 				64328B7C1B63B7540036B88F /* AVFoundation.framework in Frameworks */,
 				50C9C4A4393E05F684BCB770 /* Pods_EVE.framework in Frameworks */,
 			);
@@ -102,6 +109,8 @@
 		64328B7D1B63B7760036B88F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				64DD9E9C1B67055600B51AC4 /* eve-logo-flare.png */,
+				64DD9E991B6704CB00B51AC4 /* spark.png */,
 				64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */,
 				64328B7E1B63B7930036B88F /* bg.mp4 */,
 			);
@@ -191,6 +200,7 @@
 		EB0146782E8CC3B9D5CAF24E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64DD9EA21B67068600B51AC4 /* SceneKit.framework */,
 				64328B7B1B63B7540036B88F /* AVFoundation.framework */,
 				3A6DDBD9DDDF92D63D5EB6A0 /* Pods_EVE.framework */,
 			);
@@ -307,8 +317,10 @@
 			files = (
 				64ACB1B01B6371CA00C8C22A /* LaunchScreen.storyboard in Resources */,
 				64ACB1AD1B6371CA00C8C22A /* Assets.xcassets in Resources */,
+				64DD9E9D1B67055600B51AC4 /* eve-logo-flare.png in Resources */,
 				64328B7F1B63B7930036B88F /* bg.mp4 in Resources */,
 				64DD9E931B66322C00B51AC4 /* EVE_SSO_Login_Button.png in Resources */,
+				64DD9E9B1B6704CB00B51AC4 /* spark.png in Resources */,
 				64ACB1AB1B6371CA00C8C22A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

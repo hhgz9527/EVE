@@ -1,20 +1,29 @@
 PODS:
   - Alamofire (1.2.3)
+  - SnapKit (0.12.0)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `swift-2.0`)
+  - SnapKit (from `https://github.com/SnapKit/SnapKit.git`, branch `swift-2.0`)
 
 EXTERNAL SOURCES:
   Alamofire:
     :branch: swift-2.0
     :git: https://github.com/Alamofire/Alamofire.git
+  SnapKit:
+    :branch: swift-2.0
+    :git: https://github.com/SnapKit/SnapKit.git
 
 CHECKOUT OPTIONS:
   Alamofire:
     :commit: fd71afb3a0af2042b9f05a6b9f29317ad4903703
     :git: https://github.com/Alamofire/Alamofire.git
+  SnapKit:
+    :commit: e9c9f6fe8e0954a50dd62a61a449b66ef84ae205
+    :git: https://github.com/SnapKit/SnapKit.git
 
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  SnapKit: 00c388aa3bf1944c1b55472f31e841f75bd83882
 
 COCOAPODS: 0.37.2

@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A226f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vEu-Hp-KSY">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,9 +21,25 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2h-xm-AlM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1WS-rn-YME"/>
+                                    <constraint firstAttribute="width" secondItem="q2h-xm-AlM" secondAttribute="height" multiplier="31:5" id="Oit-Rs-8oe"/>
+                                    <constraint firstAttribute="width" constant="124" id="vgP-X2-D8L"/>
+                                </constraints>
                                 <state key="normal" image="EVE_SSO_Login_Button.png"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="138" y="390" width="124" height="20"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1WS-rn-YME"/>
+                                        <exclude reference="Oit-Rs-8oe"/>
+                                        <exclude reference="vgP-X2-D8L"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1WS-rn-YME"/>
+                                        <include reference="Oit-Rs-8oe"/>
+                                        <include reference="vgP-X2-D8L"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="requestAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmg-jB-3UE"/>
@@ -29,14 +47,32 @@
                             </button>
                         </subviews>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="q2h-xm-AlM" secondAttribute="trailing" id="2Zr-hE-EH8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q2h-xm-AlM" secondAttribute="bottom" constant="20" id="Clk-Fy-7e7"/>
+                            <constraint firstItem="q2h-xm-AlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w89-Kf-rpf"/>
+                            <constraint firstItem="q2h-xm-AlM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="wes-h5-dQs"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="q2h-xm-AlM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Clk-Fy-7e7"/>
+                                <exclude reference="2Zr-hE-EH8"/>
+                                <exclude reference="w89-Kf-rpf"/>
+                                <exclude reference="wes-h5-dQs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="q2h-xm-AlM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Clk-Fy-7e7"/>
+                                <include reference="2Zr-hE-EH8"/>
+                                <exclude reference="w89-Kf-rpf"/>
+                                <exclude reference="wes-h5-dQs"/>
                             </mask>
                         </variation>
                     </view>
@@ -49,8 +85,9 @@
         <!--Navigation Controller-->
         <scene sceneID="IS9-cx-laQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vEu-Hp-KSY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vEu-Hp-KSY" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqH-rw-IR8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
