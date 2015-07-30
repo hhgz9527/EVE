@@ -102,17 +102,20 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="7pC-Wz-41F"/>
                                             <constraint firstAttribute="height" constant="20" id="Jnb-Re-G1e"/>
+                                            <constraint firstAttribute="width" secondItem="bfD-wW-S9J" secondAttribute="height" multiplier="1:1" id="NSy-Zp-VVT"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="7pC-Wz-41F"/>
                                                 <exclude reference="Jnb-Re-G1e"/>
+                                                <exclude reference="NSy-Zp-VVT"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="7pC-Wz-41F"/>
                                                 <include reference="Jnb-Re-G1e"/>
+                                                <include reference="NSy-Zp-VVT"/>
                                             </mask>
                                         </variation>
                                     </imageView>
