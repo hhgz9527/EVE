@@ -16,6 +16,7 @@
 		64328B7F1B63B7930036B88F /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64328B7E1B63B7930036B88F /* bg.mp4 */; };
 		64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64421DFC1B63C7CB00CD6F28 /* CRest.swift */; };
 		644D88191B65123D00BF6FAC /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D88181B65123D00BF6FAC /* URLParser.swift */; };
+		645DD2DA1B6CC0990076F8E3 /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 645DD2D91B6CC0990076F8E3 /* Line.png */; };
 		6462EF771B6C524F008E2FBA /* eve.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF751B6C524F008E2FBA /* eve.ttf */; };
 		6462EF841B6C53F2008E2FBA /* evesansneue-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF781B6C53F2008E2FBA /* evesansneue-bold.otf */; };
 		6462EF851B6C53F2008E2FBA /* evesansneue-bolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF791B6C53F2008E2FBA /* evesansneue-bolditalic.otf */; };
@@ -77,6 +78,7 @@
 		64328B7E1B63B7930036B88F /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		64421DFC1B63C7CB00CD6F28 /* CRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRest.swift; sourceTree = "<group>"; };
 		644D88181B65123D00BF6FAC /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		645DD2D91B6CC0990076F8E3 /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line.png; sourceTree = "<group>"; };
 		6462EF751B6C524F008E2FBA /* eve.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eve.ttf; sourceTree = "<group>"; };
 		6462EF781B6C53F2008E2FBA /* evesansneue-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-bold.otf"; sourceTree = "<group>"; };
 		6462EF791B6C53F2008E2FBA /* evesansneue-bolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-bolditalic.otf"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				64DD9E9C1B67055600B51AC4 /* eve-logo-flare.png */,
 				64DD9E991B6704CB00B51AC4 /* spark.png */,
 				64DD9E921B66322C00B51AC4 /* EVE_SSO_Login_Button.png */,
+				645DD2D91B6CC0990076F8E3 /* Line.png */,
 				64328B7E1B63B7930036B88F /* bg.mp4 */,
 			);
 			name = Resources;
@@ -430,6 +433,7 @@
 				64DD9E9B1B6704CB00B51AC4 /* spark.png in Resources */,
 				6462EF881B6C53F2008E2FBA /* evesansneue-condensedbolditalic.otf in Resources */,
 				64963B451B679AF400317D74 /* skills.png in Resources */,
+				645DD2DA1B6CC0990076F8E3 /* Line.png in Resources */,
 				6462EF851B6C53F2008E2FBA /* evesansneue-bolditalic.otf in Resources */,
 				6462EF8A1B6C53F2008E2FBA /* evesansneue-expanded.otf in Resources */,
 			);

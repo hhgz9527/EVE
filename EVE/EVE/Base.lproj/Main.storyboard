@@ -62,7 +62,7 @@
                                     <action selector="requestAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmg-jB-3UE"/>
                                 </connections>
                             </button>
-                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYS-HT-RqM" customClass="HomeCharacterView" customModule="EVE" customModuleProvider="target">
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYS-HT-RqM" customClass="HomeCharacterView" customModule="EVE" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-NV-yQu">
@@ -237,6 +237,40 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="daK-kl-Dzv" userLabel="Top Border">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="YEX-Zx-tqU"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="YEX-Zx-tqU"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="YEX-Zx-tqU"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="kVV-Of-qex" userLabel="Bottom Border">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Oxq-6D-v8u"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Oxq-6D-v8u"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Oxq-6D-v8u"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <constraints>
@@ -250,14 +284,21 @@
                                     <constraint firstItem="Wz2-3C-ee8" firstAttribute="leading" secondItem="Yta-NV-yQu" secondAttribute="trailing" constant="10" id="ClO-JA-lkN"/>
                                     <constraint firstItem="mtp-N0-adw" firstAttribute="leading" secondItem="Yta-NV-yQu" secondAttribute="trailing" constant="10" id="D6T-6G-8Iv"/>
                                     <constraint firstItem="2Wz-wB-lHl" firstAttribute="leading" secondItem="Yta-NV-yQu" secondAttribute="trailing" constant="10" id="D9S-pa-Ivx"/>
+                                    <constraint firstItem="kVV-Of-qex" firstAttribute="leading" secondItem="vYS-HT-RqM" secondAttribute="leading" id="G3B-e9-KTX"/>
+                                    <constraint firstItem="kVV-Of-qex" firstAttribute="width" secondItem="vYS-HT-RqM" secondAttribute="width" id="GOQ-sX-8NB"/>
                                     <constraint firstAttribute="trailing" secondItem="2Wz-wB-lHl" secondAttribute="trailing" id="JEq-9P-73b"/>
                                     <constraint firstItem="hBT-z2-jV5" firstAttribute="top" secondItem="bAn-Kc-oR1" secondAttribute="bottom" constant="2" id="NEv-XC-lrL"/>
                                     <constraint firstItem="dhK-fA-Kbd" firstAttribute="leading" secondItem="bfD-wW-S9J" secondAttribute="trailing" constant="3" id="PiD-9M-6tf"/>
+                                    <constraint firstItem="daK-kl-Dzv" firstAttribute="top" secondItem="vYS-HT-RqM" secondAttribute="top" id="QNo-0o-z0a"/>
                                     <constraint firstItem="Yta-NV-yQu" firstAttribute="centerY" secondItem="vYS-HT-RqM" secondAttribute="centerY" id="UeD-eR-b0f"/>
                                     <constraint firstItem="ehX-1I-vN6" firstAttribute="centerY" secondItem="mtp-N0-adw" secondAttribute="centerY" id="XkL-db-6bR"/>
                                     <constraint firstAttribute="trailing" secondItem="8kr-3A-404" secondAttribute="trailing" id="bec-7l-neW"/>
                                     <constraint firstItem="bAn-Kc-oR1" firstAttribute="top" secondItem="ho3-AS-PSA" secondAttribute="bottom" constant="2.5" id="cHF-OA-bxS"/>
+                                    <constraint firstItem="daK-kl-Dzv" firstAttribute="width" secondItem="vYS-HT-RqM" secondAttribute="width" id="cxB-kN-cDC"/>
                                     <constraint firstAttribute="trailing" secondItem="Wz2-3C-ee8" secondAttribute="trailing" constant="0.5" id="dsT-Mo-bWs"/>
+                                    <constraint firstItem="daK-kl-Dzv" firstAttribute="leading" secondItem="vYS-HT-RqM" secondAttribute="leading" constant="80" id="gH7-HC-3Ff">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                    </constraint>
                                     <constraint firstItem="Yta-NV-yQu" firstAttribute="leading" secondItem="vYS-HT-RqM" secondAttribute="leading" constant="16" id="gqz-bU-bqC"/>
                                     <constraint firstItem="ho3-AS-PSA" firstAttribute="top" secondItem="mtp-N0-adw" secondAttribute="bottom" constant="2" id="hKu-G5-UqN"/>
                                     <constraint firstAttribute="trailing" secondItem="gqS-sU-1wP" secondAttribute="trailing" id="i06-KL-uYC"/>
@@ -274,6 +315,7 @@
                                     <constraint firstItem="8kr-3A-404" firstAttribute="centerY" secondItem="bAn-Kc-oR1" secondAttribute="centerY" id="u1N-NX-g59"/>
                                     <constraint firstItem="Wz2-3C-ee8" firstAttribute="top" secondItem="hBT-z2-jV5" secondAttribute="bottom" constant="4" id="u7X-xR-zlO"/>
                                     <constraint firstAttribute="trailing" secondItem="dhK-fA-Kbd" secondAttribute="trailing" id="viu-6L-dAr"/>
+                                    <constraint firstAttribute="bottom" secondItem="kVV-Of-qex" secondAttribute="bottom" id="yvc-8m-TF6"/>
                                     <constraint firstAttribute="trailing" secondItem="hBT-z2-jV5" secondAttribute="trailing" constant="113" id="zAz-aa-Pfv">
                                         <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                     </constraint>
@@ -292,10 +334,18 @@
                                         <exclude reference="Wz2-3C-ee8"/>
                                         <exclude reference="ehX-1I-vN6"/>
                                         <exclude reference="8kr-3A-404"/>
+                                        <exclude reference="daK-kl-Dzv"/>
+                                        <exclude reference="kVV-Of-qex"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="QNo-0o-z0a"/>
+                                        <exclude reference="cxB-kN-cDC"/>
+                                        <exclude reference="gH7-HC-3Ff"/>
                                         <exclude reference="UeD-eR-b0f"/>
                                         <exclude reference="gqz-bU-bqC"/>
+                                        <exclude reference="G3B-e9-KTX"/>
+                                        <exclude reference="GOQ-sX-8NB"/>
+                                        <exclude reference="yvc-8m-TF6"/>
                                         <exclude reference="AzB-tC-BHg"/>
                                         <exclude reference="D9S-pa-Ivx"/>
                                         <exclude reference="JEq-9P-73b"/>
@@ -341,10 +391,18 @@
                                         <include reference="Wz2-3C-ee8"/>
                                         <include reference="ehX-1I-vN6"/>
                                         <include reference="8kr-3A-404"/>
+                                        <include reference="daK-kl-Dzv"/>
+                                        <include reference="kVV-Of-qex"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="QNo-0o-z0a"/>
+                                        <include reference="cxB-kN-cDC"/>
+                                        <include reference="gH7-HC-3Ff"/>
                                         <include reference="UeD-eR-b0f"/>
                                         <include reference="gqz-bU-bqC"/>
+                                        <include reference="G3B-e9-KTX"/>
+                                        <include reference="GOQ-sX-8NB"/>
+                                        <include reference="yvc-8m-TF6"/>
                                         <include reference="AzB-tC-BHg"/>
                                         <include reference="D9S-pa-Ivx"/>
                                         <include reference="JEq-9P-73b"/>
@@ -458,6 +516,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Avb-cP-juV"/>
                     <connections>
+                        <outlet property="characterView" destination="vYS-HT-RqM" id="hTq-x2-5U0"/>
                         <outlet property="priceWatchListLabel" destination="ZNn-fy-fdd" id="tKI-oE-GD4"/>
                     </connections>
                 </viewController>
@@ -489,6 +548,7 @@
     <resources>
         <image name="EVE_SSO_Login_Button.png" width="270" height="45"/>
         <image name="FCON.png" width="40" height="40"/>
+        <image name="Line.png" width="826" height="4"/>
         <image name="NNS.png" width="40" height="40"/>
         <image name="Portrait.png" width="256" height="256"/>
     </resources>
