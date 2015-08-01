@@ -1,9 +1,11 @@
 PODS:
   - Alamofire (1.2.3)
+  - MarqueeLabel (2.2.5)
   - SnapKit (0.12.0)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `swift-2.0`)
+  - MarqueeLabel
   - SnapKit (from `https://github.com/SnapKit/SnapKit.git`, branch `swift-2.0`)
 
 EXTERNAL SOURCES:
@@ -24,6 +26,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  MarqueeLabel: 65ca60ee9ba554be34f35339004c6c9fe6366a31
   SnapKit: 00c388aa3bf1944c1b55472f31e841f75bd83882
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

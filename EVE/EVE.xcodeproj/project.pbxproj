@@ -16,6 +16,20 @@
 		64328B7F1B63B7930036B88F /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64328B7E1B63B7930036B88F /* bg.mp4 */; };
 		64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64421DFC1B63C7CB00CD6F28 /* CRest.swift */; };
 		644D88191B65123D00BF6FAC /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D88181B65123D00BF6FAC /* URLParser.swift */; };
+		6462EF771B6C524F008E2FBA /* eve.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF751B6C524F008E2FBA /* eve.ttf */; };
+		6462EF841B6C53F2008E2FBA /* evesansneue-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF781B6C53F2008E2FBA /* evesansneue-bold.otf */; };
+		6462EF851B6C53F2008E2FBA /* evesansneue-bolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF791B6C53F2008E2FBA /* evesansneue-bolditalic.otf */; };
+		6462EF861B6C53F2008E2FBA /* evesansneue-condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF7A1B6C53F2008E2FBA /* evesansneue-condensed.otf */; };
+		6462EF871B6C53F2008E2FBA /* evesansneue-condensedbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF7B1B6C53F2008E2FBA /* evesansneue-condensedbold.otf */; };
+		6462EF881B6C53F2008E2FBA /* evesansneue-condensedbolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF7C1B6C53F2008E2FBA /* evesansneue-condensedbolditalic.otf */; };
+		6462EF891B6C53F2008E2FBA /* evesansneue-condenseditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF7D1B6C53F2008E2FBA /* evesansneue-condenseditalic.otf */; };
+		6462EF8A1B6C53F2008E2FBA /* evesansneue-expanded.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF7E1B6C53F2008E2FBA /* evesansneue-expanded.otf */; };
+		6462EF8B1B6C53F2008E2FBA /* evesansneue-expandedbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF7F1B6C53F2008E2FBA /* evesansneue-expandedbold.otf */; };
+		6462EF8C1B6C53F2008E2FBA /* evesansneue-expandedbolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF801B6C53F2008E2FBA /* evesansneue-expandedbolditalic.otf */; };
+		6462EF8D1B6C53F2008E2FBA /* evesansneue-expandeditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF811B6C53F2008E2FBA /* evesansneue-expandeditalic.otf */; };
+		6462EF8E1B6C53F2008E2FBA /* evesansneue-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF821B6C53F2008E2FBA /* evesansneue-italic.otf */; };
+		6462EF8F1B6C53F2008E2FBA /* evesansneue-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6462EF831B6C53F2008E2FBA /* evesansneue-regular.otf */; };
+		6462EF911B6C54F9008E2FBA /* HomeCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6462EF901B6C54F9008E2FBA /* HomeCharacterView.swift */; };
 		647A49D61B68532500D64D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647A49D41B68532500D64D17 /* Main.storyboard */; };
 		64963B3C1B67923500317D74 /* Virgo.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B3B1B67923500317D74 /* Virgo.png */; };
 		64963B3F1B679AC800317D74 /* charactersheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B3E1B679AC800317D74 /* charactersheet.png */; };
@@ -24,7 +38,7 @@
 		64963B451B679AF400317D74 /* skills.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B441B679AF400317D74 /* skills.png */; };
 		64963B471B679B0700317D74 /* evemail.png in Resources */ = {isa = PBXBuildFile; fileRef = 64963B461B679B0700317D74 /* evemail.png */; };
 		64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */; };
-		64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A71B6371CA00C8C22A /* ViewController.swift */; };
+		64ACB1A81B6371CA00C8C22A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1A71B6371CA00C8C22A /* HomeViewController.swift */; };
 		64ACB1AD1B6371CA00C8C22A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64ACB1AC1B6371CA00C8C22A /* Assets.xcassets */; };
 		64ACB1B01B6371CA00C8C22A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64ACB1AE1B6371CA00C8C22A /* LaunchScreen.storyboard */; };
 		64ACB1BB1B6371CA00C8C22A /* EVETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB1BA1B6371CA00C8C22A /* EVETests.swift */; };
@@ -63,6 +77,20 @@
 		64328B7E1B63B7930036B88F /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		64421DFC1B63C7CB00CD6F28 /* CRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRest.swift; sourceTree = "<group>"; };
 		644D88181B65123D00BF6FAC /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		6462EF751B6C524F008E2FBA /* eve.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eve.ttf; sourceTree = "<group>"; };
+		6462EF781B6C53F2008E2FBA /* evesansneue-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-bold.otf"; sourceTree = "<group>"; };
+		6462EF791B6C53F2008E2FBA /* evesansneue-bolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-bolditalic.otf"; sourceTree = "<group>"; };
+		6462EF7A1B6C53F2008E2FBA /* evesansneue-condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-condensed.otf"; sourceTree = "<group>"; };
+		6462EF7B1B6C53F2008E2FBA /* evesansneue-condensedbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-condensedbold.otf"; sourceTree = "<group>"; };
+		6462EF7C1B6C53F2008E2FBA /* evesansneue-condensedbolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-condensedbolditalic.otf"; sourceTree = "<group>"; };
+		6462EF7D1B6C53F2008E2FBA /* evesansneue-condenseditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-condenseditalic.otf"; sourceTree = "<group>"; };
+		6462EF7E1B6C53F2008E2FBA /* evesansneue-expanded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-expanded.otf"; sourceTree = "<group>"; };
+		6462EF7F1B6C53F2008E2FBA /* evesansneue-expandedbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-expandedbold.otf"; sourceTree = "<group>"; };
+		6462EF801B6C53F2008E2FBA /* evesansneue-expandedbolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-expandedbolditalic.otf"; sourceTree = "<group>"; };
+		6462EF811B6C53F2008E2FBA /* evesansneue-expandeditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-expandeditalic.otf"; sourceTree = "<group>"; };
+		6462EF821B6C53F2008E2FBA /* evesansneue-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-italic.otf"; sourceTree = "<group>"; };
+		6462EF831B6C53F2008E2FBA /* evesansneue-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "evesansneue-regular.otf"; sourceTree = "<group>"; };
+		6462EF901B6C54F9008E2FBA /* HomeCharacterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCharacterView.swift; sourceTree = "<group>"; };
 		647A49D51B68532500D64D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64963B3B1B67923500317D74 /* Virgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Virgo.png; sourceTree = "<group>"; };
 		64963B3E1B679AC800317D74 /* charactersheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charactersheet.png; sourceTree = "<group>"; };
@@ -72,7 +100,7 @@
 		64963B461B679B0700317D74 /* evemail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evemail.png; sourceTree = "<group>"; };
 		64ACB1A21B6371CA00C8C22A /* EVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64ACB1A71B6371CA00C8C22A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64ACB1A71B6371CA00C8C22A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		64ACB1AC1B6371CA00C8C22A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64ACB1AF1B6371CA00C8C22A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64ACB1B11B6371CA00C8C22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +157,7 @@
 		64328B7D1B63B7760036B88F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6462EF731B6C5232008E2FBA /* Fonts */,
 				64963B3D1B679A8F00317D74 /* Icons */,
 				64963B3B1B67923500317D74 /* Virgo.png */,
 				64DD9E9C1B67055600B51AC4 /* eve-logo-flare.png */,
@@ -161,6 +190,26 @@
 			children = (
 			);
 			name = XML;
+			sourceTree = "<group>";
+		};
+		6462EF731B6C5232008E2FBA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6462EF781B6C53F2008E2FBA /* evesansneue-bold.otf */,
+				6462EF791B6C53F2008E2FBA /* evesansneue-bolditalic.otf */,
+				6462EF7A1B6C53F2008E2FBA /* evesansneue-condensed.otf */,
+				6462EF7B1B6C53F2008E2FBA /* evesansneue-condensedbold.otf */,
+				6462EF7C1B6C53F2008E2FBA /* evesansneue-condensedbolditalic.otf */,
+				6462EF7D1B6C53F2008E2FBA /* evesansneue-condenseditalic.otf */,
+				6462EF7E1B6C53F2008E2FBA /* evesansneue-expanded.otf */,
+				6462EF7F1B6C53F2008E2FBA /* evesansneue-expandedbold.otf */,
+				6462EF801B6C53F2008E2FBA /* evesansneue-expandedbolditalic.otf */,
+				6462EF811B6C53F2008E2FBA /* evesansneue-expandeditalic.otf */,
+				6462EF821B6C53F2008E2FBA /* evesansneue-italic.otf */,
+				6462EF831B6C53F2008E2FBA /* evesansneue-regular.otf */,
+				6462EF751B6C524F008E2FBA /* eve.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		64963B3D1B679A8F00317D74 /* Icons */ = {
@@ -206,10 +255,11 @@
 				644D88161B65094600BF6FAC /* API */,
 				64ACB1A51B6371CA00C8C22A /* AppDelegate.swift */,
 				644D88181B65123D00BF6FAC /* URLParser.swift */,
-				64ACB1A71B6371CA00C8C22A /* ViewController.swift */,
+				64ACB1A71B6371CA00C8C22A /* HomeViewController.swift */,
 				6402F2601B6857940069F8C5 /* Constellation.swift */,
 				64ACB1AC1B6371CA00C8C22A /* Assets.xcassets */,
 				647A49D41B68532500D64D17 /* Main.storyboard */,
+				6462EF901B6C54F9008E2FBA /* HomeCharacterView.swift */,
 				64ACB1AE1B6371CA00C8C22A /* LaunchScreen.storyboard */,
 				64ACB1B11B6371CA00C8C22A /* Info.plist */,
 				64328B7D1B63B7760036B88F /* Resources */,
@@ -355,20 +405,33 @@
 			files = (
 				640AE8201B69A5E20068EE94 /* Portrait.png in Resources */,
 				64ACB1B01B6371CA00C8C22A /* LaunchScreen.storyboard in Resources */,
+				6462EF861B6C53F2008E2FBA /* evesansneue-condensed.otf in Resources */,
 				64963B471B679B0700317D74 /* evemail.png in Resources */,
 				64ACB1AD1B6371CA00C8C22A /* Assets.xcassets in Resources */,
+				6462EF8B1B6C53F2008E2FBA /* evesansneue-expandedbold.otf in Resources */,
+				6462EF8E1B6C53F2008E2FBA /* evesansneue-italic.otf in Resources */,
+				6462EF8C1B6C53F2008E2FBA /* evesansneue-expandedbolditalic.otf in Resources */,
 				64DD9E9D1B67055600B51AC4 /* eve-logo-flare.png in Resources */,
 				64963B3C1B67923500317D74 /* Virgo.png in Resources */,
 				64963B411B679AD700317D74 /* assets.png in Resources */,
 				64328B7F1B63B7930036B88F /* bg.mp4 in Resources */,
 				647A49D61B68532500D64D17 /* Main.storyboard in Resources */,
+				6462EF8D1B6C53F2008E2FBA /* evesansneue-expandeditalic.otf in Resources */,
+				6462EF841B6C53F2008E2FBA /* evesansneue-bold.otf in Resources */,
+				6462EF8F1B6C53F2008E2FBA /* evesansneue-regular.otf in Resources */,
 				640AE8221B69A5E20068EE94 /* NNS.png in Resources */,
 				64963B3F1B679AC800317D74 /* charactersheet.png in Resources */,
+				6462EF891B6C53F2008E2FBA /* evesansneue-condenseditalic.otf in Resources */,
 				64963B431B679AEB00317D74 /* wallet.png in Resources */,
+				6462EF871B6C53F2008E2FBA /* evesansneue-condensedbold.otf in Resources */,
 				64DD9E931B66322C00B51AC4 /* EVE_SSO_Login_Button.png in Resources */,
 				640AE8211B69A5E20068EE94 /* FCON.png in Resources */,
+				6462EF771B6C524F008E2FBA /* eve.ttf in Resources */,
 				64DD9E9B1B6704CB00B51AC4 /* spark.png in Resources */,
+				6462EF881B6C53F2008E2FBA /* evesansneue-condensedbolditalic.otf in Resources */,
 				64963B451B679AF400317D74 /* skills.png in Resources */,
+				6462EF851B6C53F2008E2FBA /* evesansneue-bolditalic.otf in Resources */,
+				6462EF8A1B6C53F2008E2FBA /* evesansneue-expanded.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +505,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */,
-				64ACB1A81B6371CA00C8C22A /* ViewController.swift in Sources */,
+				6462EF911B6C54F9008E2FBA /* HomeCharacterView.swift in Sources */,
+				64ACB1A81B6371CA00C8C22A /* HomeViewController.swift in Sources */,
 				644D88191B65123D00BF6FAC /* URLParser.swift in Sources */,
 				64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */,
 				6402F2611B6857940069F8C5 /* Constellation.swift in Sources */,

@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import MarqueeLabel
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
+    @IBOutlet weak var priceWatchListLabel: MarqueeLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        priceWatchListLabel.scrollDuration = 10.0
+        priceWatchListLabel.fadeLength = 25.0
+        
     }
 
     override func didReceiveMemoryWarning() {
