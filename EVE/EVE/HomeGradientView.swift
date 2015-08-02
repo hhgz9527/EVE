@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeCharacterView: UIView {
+class HomeGradientView: UIView {
     let gradientLayer = CAGradientLayer()
     
     override func layoutSubviews() {

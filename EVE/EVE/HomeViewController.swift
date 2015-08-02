@@ -11,16 +11,19 @@ import MarqueeLabel
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var characterView: HomeCharacterView!
-    @IBOutlet weak var priceWatchListLabel: MarqueeLabel!
+    @IBOutlet weak var characterView: HomeGradientView!
+    @IBOutlet weak var priceWatchListLabel: HomeScrollLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        priceWatchListLabel.scrollDuration = 10.0
+        priceWatchListLabel.marqueeType = MarqueeType.MLContinuous
+        priceWatchListLabel.animationDelay = 0
+        priceWatchListLabel.scrollDuration = CGFloat((priceWatchListLabel.text?.characters.count)! / 5)
         priceWatchListLabel.fadeLength = 25.0
-        
+        priceWatchListLabel.leadingBuffer = 30.0
+        priceWatchListLabel.trailingBuffer = 20.0
         
     }
 
