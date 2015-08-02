@@ -1,8 +1,8 @@
-platform :ios, '8.0'
+platform :ios, '8.4'
 use_frameworks!
 
-target 'EVE' do
-  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift-2.0'
-  pod 'SnapKit', :git => 'https://github.com/SnapKit/SnapKit.git', :branch => 'swift-2.0'
-  pod 'MarqueeLabel'
-end
+link_with 'EVE', 'EVETests'
+
+pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift-2.0'
+pod 'SnapKit', :git => 'https://github.com/SnapKit/SnapKit.git', :branch => 'swift-2.0'
+pod 'MarqueeLabel'

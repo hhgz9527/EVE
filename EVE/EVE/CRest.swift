@@ -32,24 +32,10 @@ class CRest {
         let headers = ["Authorization": "Basic " + authStr!,
         "Content-Type": "application/x-www-form-urlencoded",
             "Host": "login.eveonline.com"]
-        
         let params = ["grant_type": "authorization_code",
         "code": code]
-        
-        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders as! [String: String]
-        for (key, value) in headers {
-            defaultHeaders[key] = value
-        }
-        
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        config.HTTPAdditionalHeaders = defaultHeaders
-        authManager = Alamofire.Manager(configuration: config)
-        print("\(authManager!.session.configuration.HTTPAdditionalHeaders)", appendNewline: true)
-        
-        authManager!.request(.POST, "https://login.eveonline.com/oauth/token", parameters: params, encoding: ParameterEncoding.URL).responseJSON { (req, res, JSON, err) -> Void in
-            if let e = err {
-                print("Error: \(e.description)", appendNewline: true)
-            }
+
+        Alamofire.request(Alamofire.Method.POST, "https://login.eveonline.com/oauth/token", parameters: params, encoding: ParameterEncoding.URL, headers: headers).responseJSON { (req, res, JSON) -> Void in
             
             print("\(JSON)", appendNewline: true)
         }
@@ -65,12 +51,10 @@ class CRest {
             "Content-Type": "application/x-www-form-urlencoded",
             "Host": "login.eveonline.com"]
         
-        //        print("Access token: \(access_token) hahahahaha", appendNewline: true)
         let params = ["grant_type": "refresh_token",
             "refresh_token": "OyKJ-tsztZ3jzWvb5K7CGvDu5SoZZnD495LWMde-MDE1"]
         
-        Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders = headers
-        Alamofire.request(.POST, URLString: "https://login.eveonline.com/oauth/token", parameters: params).responseJSON { (req, res, JSON, err) -> Void in
+        Alamofire.request(.POST, "https://login.eveonline.com/oauth/token", parameters: params, encoding: ParameterEncoding.URL, headers: headers).responseJSON { (req, res, JSON) -> Void in
             print("\(JSON)", appendNewline: true)
         }
     }
