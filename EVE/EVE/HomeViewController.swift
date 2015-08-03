@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var characterView: HomeGradientView!
     @IBOutlet weak var priceWatchListLabel: HomeScrollLabel!
     
+    @IBOutlet weak var menuViewTopSpacingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var priceLabelTopSpacingConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +27,12 @@ class HomeViewController: UIViewController {
         priceWatchListLabel.fadeLength = 25.0
         priceWatchListLabel.leadingBuffer = 30.0
         priceWatchListLabel.trailingBuffer = 20.0
+        
+        print("\(UIScreen.mainScreen().bounds.height)", appendNewline: true)
+        if UIScreen.mainScreen().bounds.height == 736 {
+            priceLabelTopSpacingConstraint.constant = 30.0
+            menuViewTopSpacingConstraint.constant = 30.0
+        }
         
     }
 
