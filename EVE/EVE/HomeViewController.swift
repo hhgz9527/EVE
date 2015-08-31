@@ -11,9 +11,11 @@ import MarqueeLabel
 
 class HomeViewController: UIViewController {
 
+    // UI Widgets
     @IBOutlet weak var characterView: HomeGradientView!
     @IBOutlet weak var priceWatchListLabel: HomeScrollLabel!
     
+    // Constraints
     @IBOutlet weak var menuViewTopSpacingConstraint: NSLayoutConstraint!
     @IBOutlet weak var priceLabelTopSpacingConstraint: NSLayoutConstraint!
     
@@ -28,7 +30,7 @@ class HomeViewController: UIViewController {
         priceWatchListLabel.leadingBuffer = 30.0
         priceWatchListLabel.trailingBuffer = 20.0
         
-        print("\(UIScreen.mainScreen().bounds.height)", appendNewline: true)
+        print("\(UIScreen.mainScreen().bounds.height)", terminator: "\n")
         if UIScreen.mainScreen().bounds.height == 736 {
             priceLabelTopSpacingConstraint.constant = 30.0
             menuViewTopSpacingConstraint.constant = 30.0

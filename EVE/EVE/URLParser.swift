@@ -23,7 +23,7 @@ class URLParser {
                 
                 if pair[0] == "code" {
                     authCode = pair[1]
-                    print("Code: \(authCode)", appendNewline: true)
+                    print("Code: \(authCode)", terminator: "\n")
                     CRest.sharedInstance.verifyAuthCode(authCode)
                 }
             }

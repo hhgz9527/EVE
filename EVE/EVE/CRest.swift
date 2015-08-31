@@ -37,7 +37,7 @@ class CRest {
 
         Alamofire.request(Alamofire.Method.POST, "https://login.eveonline.com/oauth/token", parameters: params, encoding: ParameterEncoding.URL, headers: headers).responseJSON { (req, res, JSON) -> Void in
             
-            print("\(JSON)", appendNewline: true)
+            print("\(JSON)", terminator: "\n")
         }
     }
     
@@ -45,7 +45,7 @@ class CRest {
         let authStrBuff = CLIENT_ID + ":" + CLIENT_SECRET
         let authData = authStrBuff.dataUsingEncoding(NSUTF8StringEncoding)
         let authStr = authData?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength).stringByReplacingOccurrencesOfString("\r\n", withString: "")
-        print("\(authStr)", appendNewline: true)
+        print("\(authStr)", terminator: "\n")
         
         let headers = ["Authorization": "Basic " + authStr!,
             "Content-Type": "application/x-www-form-urlencoded",
@@ -55,7 +55,7 @@ class CRest {
             "refresh_token": "OyKJ-tsztZ3jzWvb5K7CGvDu5SoZZnD495LWMde-MDE1"]
         
         Alamofire.request(.POST, "https://login.eveonline.com/oauth/token", parameters: params, encoding: ParameterEncoding.URL, headers: headers).responseJSON { (req, res, JSON) -> Void in
-            print("\(JSON)", appendNewline: true)
+            print("\(JSON)", terminator: "\n")
         }
     }
     
