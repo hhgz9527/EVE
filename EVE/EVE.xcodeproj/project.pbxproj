@@ -12,6 +12,7 @@
 		640AE8201B69A5E20068EE94 /* Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 640AE81D1B69A5E20068EE94 /* Portrait.png */; };
 		640AE8211B69A5E20068EE94 /* FCON.png in Resources */ = {isa = PBXBuildFile; fileRef = 640AE81E1B69A5E20068EE94 /* FCON.png */; };
 		640AE8221B69A5E20068EE94 /* NNS.png in Resources */ = {isa = PBXBuildFile; fileRef = 640AE81F1B69A5E20068EE94 /* NNS.png */; };
+		642980811B947D75009170BE /* GradientScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642980801B947D75009170BE /* GradientScrollView.swift */; settings = {ASSET_TAGS = (); }; };
 		64328B7C1B63B7540036B88F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64328B7B1B63B7540036B88F /* AVFoundation.framework */; };
 		64328B7F1B63B7930036B88F /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64328B7E1B63B7930036B88F /* bg.mp4 */; };
 		64350CAC1B6EF3C500726BA1 /* market.png in Resources */ = {isa = PBXBuildFile; fileRef = 64350CAB1B6EF3C500726BA1 /* market.png */; };
@@ -83,6 +84,7 @@
 		640AE81D1B69A5E20068EE94 /* Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Portrait.png; sourceTree = "<group>"; };
 		640AE81E1B69A5E20068EE94 /* FCON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FCON.png; sourceTree = "<group>"; };
 		640AE81F1B69A5E20068EE94 /* NNS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NNS.png; sourceTree = "<group>"; };
+		642980801B947D75009170BE /* GradientScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientScrollView.swift; sourceTree = "<group>"; };
 		64328B7B1B63B7540036B88F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		64328B7E1B63B7930036B88F /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		64350CAB1B6EF3C500726BA1 /* market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = market.png; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				644D88181B65123D00BF6FAC /* URLParser.swift */,
 				64ACB1A71B6371CA00C8C22A /* HomeViewController.swift */,
 				6402F2601B6857940069F8C5 /* Constellation.swift */,
+				642980801B947D75009170BE /* GradientScrollView.swift */,
 				64ACB1AC1B6371CA00C8C22A /* Assets.xcassets */,
 				647A49D41B68532500D64D17 /* Main.storyboard */,
 				645DD2DB1B6CC34E0076F8E3 /* HomeScrollLabel.swift */,
@@ -597,6 +600,7 @@
 				64421DFD1B63C7CB00CD6F28 /* CRest.swift in Sources */,
 				6462EF911B6C54F9008E2FBA /* HomeGradientView.swift in Sources */,
 				64ACB1A81B6371CA00C8C22A /* HomeViewController.swift in Sources */,
+				642980811B947D75009170BE /* GradientScrollView.swift in Sources */,
 				644D88191B65123D00BF6FAC /* URLParser.swift in Sources */,
 				64ACB1A61B6371CA00C8C22A /* AppDelegate.swift in Sources */,
 				645DD2DC1B6CC34E0076F8E3 /* HomeScrollLabel.swift in Sources */,
@@ -752,6 +756,7 @@
 				INFOPLIST_FILE = EVE/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moshou.EVE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -770,6 +775,7 @@
 				INFOPLIST_FILE = EVE/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moshou.EVE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
